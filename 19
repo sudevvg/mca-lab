@@ -1,4 +1,0 @@
-a = input("enter a number: ")
-sum = int(a) + int(a+a) + int(a+a+a)
-print(sum)
-

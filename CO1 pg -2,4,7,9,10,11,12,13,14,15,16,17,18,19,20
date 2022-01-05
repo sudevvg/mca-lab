@@ -1,0 +1,189 @@
+pg 2
+
+n1=int(input("enter the 1st yr"))
+n2=int(input("enter laSt yr"))
+i=int(n1)
+while i<=n2:
+if ((i % 400 == 0)or(i%100!=0)and(i%4==0)):
+print(i)
+i=i+1
+
+-----------------------------
+
+pg 4
+
+list=["neerajgi","apple"]
+vowels=["a","e","i","o","u"]
+for i in list:
+if i>0:
+print(i,end=" ")
+print(i*i,end= " ")
+break
+[positive and square]
+
+for i in list:
+for j in vowels:
+for v in i:
+if(v==j):
+print(v, end=" ")
+print(i," ")
+[vowel]
+
+-----------------------------
+
+pg 7
+
+(c)
+l1=[54,25,34,88]
+l2=[54,25,34,88,87]
+for i in l1 and l2:
+if (i in l1 and l2):
+print("true")
+else:
+print("false")
+
+-----------------------------
+(b)
+z=0
+w=0
+for x in l1:
+z=z+x
+for y in l2:
+w=w+y
+if(z==w):
+print("sum of the lists are equal")
+else:
+print("sum of the lists are not equal")
+
+--------------------------
+(a)
+x=len(l1)
+y=len(l2)
+if(z==w):
+print("2 list are of same length")
+else:
+print("2 list are of different length")
+
+-----------------------------
+
+pg:9
+
+
+str=input("Enter the string")
+n=str[0]
+m=str[-1]
+c= m + str[1:-1] + n
+print(c)
+----------------- 
+pg-10
+
+r=float(input("Enter the radius of the circle:"))
+p=3.14
+a=(r * r) * p
+print(float(a))
+-----------------
+
+pg-11
+
+a=int(input("Enter the first num:"))
+b=int(input("Enter the second num:"))
+c=int(input("Enter the third num:"))
+if (a>b):
+    if(a>c):
+        print(int(a),"is biggest")
+elif (b>c):
+    print(int(b), "is biggest")
+else:
+    print(int(c), "is biggest")
+-----------------
+pg-12
+
+a=input("Enter the file name:")
+b=a.split(".")
+print("Extension of the", a ,"is " , b[-1])
+
+-----------------
+pg-13
+
+# list[4].input("Enter a color")
+list = [item for item in input("Enter the list items : ").split()]
+print("First color is ",list[0])
+
+print("Last color is",list[-1])
+-----------------
+
+pg 14
+
+a = input("enter a number: ")
+sum = int(a) + int(a+a) + int(a+a+a)
+print(sum)
+-----------------
+
+pg 15
+list1 = set (["red","yellow","orange","green"])
+list2 = set (["red","blue","brown","green"])
+print(list1.difference(list2))
+
+-----------------
+
+pg 16
+
+s1=input("Enter the first String")
+s2=input("Enter the second String")
+s3=s2+" "+s1
+print(s3)
+
+-----------------
+
+pg 17
+
+d={1:22,2:93,3:56,4:67,5:87}
+sorted_dict = sorted([(key, value)
+ for (value, key) in d.items()])
+print(sorted_dict)
+
+-----------------
+pg 18
+
+d1={"student1":{"name":"savad","class":"mca","rollno":50},
+    "student2":{"name":"sudev","class":"mca","rollno":56}}
+d2={"student3":{"name":"adil","class":"mca","rollno":1}}
+d1.update(d2)
+print(d1)
+
+-----------------
+pg 19
+
+def gcd(a, b):
+
+    if (a == 0):
+        return b
+    if (b == 0):
+        return a
+
+
+    if (a == b):
+        return a
+
+
+    if (a > b):
+        return gcd(a - b, b)
+    return gcd(a, b - a)
+
+a=int(input("enter the first no"))
+b=int(input("enter the first no"))
+if (gcd(a, b)):
+    print('GCD of', a, 'and', b, 'is', gcd(a, b))
+else:
+    print('not found')
+-------------------
+
+prgm 20
+
+l1={1,2,3,4,5,6,7,8,9,10}
+l2=list()
+for i in l1:
+    if(i%2==1):
+        l2.append(i)
+print(l2)
+--------------------
